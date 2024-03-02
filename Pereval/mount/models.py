@@ -3,6 +3,7 @@ from django.contrib.auth.models import User
 from django.core.files import File
 
 class Users(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
     email=models.EmailField(max_length=128, unique=True)
     last_name=models.CharField(max_length=128)
     first_name=models.CharField(max_length=128)
