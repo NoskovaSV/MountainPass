@@ -3,7 +3,6 @@ from django.contrib.auth.models import User
 from django.core.files import File
 
 class Users(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE)
     email=models.EmailField(max_length=128, unique=True)
     last_name=models.CharField(max_length=128)
     first_name=models.CharField(max_length=128)
@@ -31,6 +30,7 @@ class Pereval(models.Model):
     coord_id=models.OneToOneField('Coords', on_delete=models.CASCADE)
     tourist_id=models.ForeignKey(Users,on_delete=models.CASCADE)
     status=models.CharField(max_length=2, choices=STATUS_CHOICES, default=NEW)
+    level = models.ForeignKey('Level', on_delete=models.CASCADE)
 
 
 
@@ -41,7 +41,6 @@ class Coords(models.Model):
 
 
 class Level(models.Model):
-    level=models.ForeignKey(Pereval,on_delete=models.CASCADE)
     winter = '4A'
     spring = '2A'
     summer = '1A'
@@ -62,7 +61,7 @@ class Level(models.Model):
 class Images(models.Model):
     image = models.ImageField(upload_to='static/images')
     title=models.CharField(max_length=128)
-    pereval_id=models.ForeignKey(Pereval,on_delete=models.CASCADE)
+    pereval_id=models.ForeignKey(Pereval,on_delete=models.CASCADE, related_name='images')
 
     def __str__(self):
         return self.title

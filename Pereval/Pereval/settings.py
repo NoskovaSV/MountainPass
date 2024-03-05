@@ -86,12 +86,13 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'pereval',
-        'USER': 'lana',
-        'PASSWORD': 'lana',
-        'HOST': '192.168.56.102',
+        'USER': 'postgres',
+        'PASSWORD': 'goodlearning5',
+        'HOST': 'localhost',
         'PORT': '5432'
     }
 }
+
 
 
 
