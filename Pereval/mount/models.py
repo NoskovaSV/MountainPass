@@ -70,5 +70,3 @@ class Images(models.Model):
 
 
 
-
-
