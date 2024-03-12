@@ -3,11 +3,11 @@ from django.contrib.auth.models import User
 from django.core.files import File
 
 class Users(models.Model):
-    email=models.EmailField(max_length=128, unique=True)
+    email=models.EmailField(max_length=128)
     last_name=models.CharField(max_length=128)
     first_name=models.CharField(max_length=128)
     patronymic=models.CharField(max_length=128)
-    phone=models.CharField(max_length=128, unique=True)
+    phone=models.CharField(max_length=128)
 
 
 class Pereval(models.Model):
