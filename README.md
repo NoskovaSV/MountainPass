@@ -1,46 +1,4 @@
-payload:
-  allShortcutsEnabled: false
-  path: /
-  repo:
-    id: 765617967
-    defaultBranch: master
-    name: MountainPass
-    ownerLogin: NoskovaSV
-    currentUserCanPush: false
-    isFork: false
-    isEmpty: false
-    createdAt: '2024-03-01T09:27:51.000Z'
-    ownerAvatar: https://avatars.githubusercontent.com/u/142382581?v=4
-    public: true
-    private: false
-    isOrgOwned: false
-  currentUser: null
-  refInfo:
-    name: master
-    listCacheKey: v0:1710405699.0
-    canEdit: false
-    refType: branch
-    currentOid: c1cb224a2ff84f6afd0120162af085273f09d17b
-  tree:
-    items:
-      - name: Pereval
-        path: Pereval
-        contentType: directory
-      - name: .gitignore
-        path: .gitignore
-        contentType: file
-      - name: README.md
-        path: README.md
-        contentType: file
-      - name: main.py
-        path: main.py
-        contentType: file
-    templateDirectorySuggestionUrl: null
-    readme:
-      displayName: README.md
-      richText: >-
-        <article class="markdown-body entry-content container-lg"
-        itemprop="text"><p dir="auto">openapi: 3.0.2
+openapi: 3.0.2
 
         info:
 
@@ -150,37 +108,6 @@ payload:
 
         - other titles
 
-        - coord_id</p>
+        - coord_id
 
-        </article>
-      errorMessage: null
-      headerInfo:
-        toc: []
-        siteNavLoginPath: /login?return_to=https%3A%2F%2Fgithub.com%2FNoskovaSV%2FMountainPass
-    totalCount: 4
-    showBranchInfobar: false
-  fileTree:
-    '':
-      items:
-        - name: Pereval
-          path: Pereval
-          contentType: directory
-        - name: .gitignore
-          path: .gitignore
-          contentType: file
-        - name: README.md
-          path: README.md
-          contentType: file
-        - name: main.py
-          path: main.py
-          contentType: file
-      totalCount: 4
-  fileTreeProcessingTime: 2.048768
-  foldersToFetch: []
-  treeExpanded: true
-  symbolsExpanded: false
-  csrf_tokens:
-    /NoskovaSV/MountainPass/branches:
-      post: >-
-        FDdH5ch9klLD8Cz7PVWatEYGM17sKbbiriIJbfuYSNYhMqL55JQp39gzjyKUfOYb_6S6caXW-LjjYAuqdqRvtQ
-title: MountainPass/ at master · NoskovaSV/MountainPass
+      
